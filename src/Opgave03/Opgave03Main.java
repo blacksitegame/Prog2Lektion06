@@ -1,7 +1,14 @@
 package Opgave03;
 
+import java.util.ArrayList;
+
 public class Opgave03Main {
+
     public static int power(int n, int p) {
-        return -1;
+
+        if (Math.pow(n,p)==1){
+            return 1;
+        }
+        return power(n,p-1) * n;
     }
 }
